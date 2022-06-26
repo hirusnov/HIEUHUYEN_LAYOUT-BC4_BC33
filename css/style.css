@@ -1,1 +1,130 @@
 /* INIT */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    color: #404040;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    background-color: #db5050 !important;
+    height: 100px;
+}
+
+.header .navbar .container-fluid {
+    padding: 0;
+}
+
+.header .navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header .navbar .navbar-brand i {
+    color: #009f4d;
+    vertical-align: middle;
+}
+
+.header .navbar .logo {
+    text-transform: none;
+    padding-left: 46px;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: .9;
+}
+
+.header .navbar .navbar-nav {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header .navbar .nav-link {
+    padding: 12px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.header .navbar .nav-link.active,
+.header .navbar .nav-link:hover,
+.header .navbar .nav-link:focus {
+    color: #fff;
+    opacity: 1;
+}
+
+.header .navbar .dropdown-toggle::after {
+    display: none;
+}
+
+.header .navbar .dropdown-toggle i {
+    font-size: 14px;
+}
+
+.header .navbar .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    min-width: 186px;
+}
+
+.header .navbar .dropdown-menu i {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    top: -10%;
+    color: #fff;
+}
+
+.header .navbar .dropdown-item {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #3f3a64;
+    background: none;
+    opacity: .8;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.header .navbar .btn-search i {
+    padding: 15px;
+    color: #fff;
+    background: #009f4d;
+    border-radius: 50%;
+    cursor: pointer;
+}

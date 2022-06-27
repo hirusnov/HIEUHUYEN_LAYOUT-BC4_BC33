@@ -31,12 +31,44 @@ p {
     padding: 0;
 }
 
-.header .navbar {
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    background-color: #db5050 !important;
+.btn {
+    color: #fff;
+    background-color: #00a63f;
+    border-color: #00a63f;
+}
+
+.btn:hover,
+button:hover {
+    color: #fff;
+    background-color: #008030;
+    border-color: #00732c;
+}
+
+.btn:focus,
+button:focus {
+    color: #fff;
+    background-color: #008030;
+    border-color: #00732c;
+    box-shadow: 0 0 0 4px rgb(38 179 92 / 50%);
+}
+
+.header {
+    padding: 0px;
     height: 100px;
+    display: grid;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    line-height: 1;
+    transition: all .5s;
+}
+
+.header.nav-fixed {
+    padding: 0;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 
 .header .navbar .container-fluid {
@@ -50,6 +82,10 @@ p {
     text-transform: capitalize;
     font-weight: 600;
     color: #fff;
+}
+
+.header.nav-fixed .navbar-brand {
+    color: #3f3a64;
 }
 
 .header .navbar .navbar-brand i {
@@ -75,6 +111,19 @@ p {
     padding: 12px;
     color: #fff;
     opacity: 0.8;
+    transition: all .5s;
+}
+
+.header.nav-fixed .navbar .nav-link,
+.header.nav-fixed .navbar .nav-link:hover,
+.header.nav-fixed .navbar .nav-link:focus {
+    color: #3f3a64;
+    opacity: 0.7;
+}
+
+.header.nav-fixed .navbar .nav-link.active {
+    color: #009f4d;
+    opacity: 0.9;
 }
 
 .header .navbar .nav-link.active,
@@ -119,6 +168,11 @@ p {
     opacity: .8;
     font-weight: 600;
     padding: 10px 20px;
+    transition: all .5s;
+}
+
+.header .navbar .dropdown-item:hover {
+    opacity: 1;
 }
 
 .header .navbar .btn-search i {
@@ -127,4 +181,161 @@ p {
     background: #009f4d;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.carousel .carousel__item {
+    min-height: 800px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel .carousel__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 42, 55, 0.7);
+    z-index: -1;
+}
+
+.carousel .carousel__item.carousel__item--1 {
+    background-image: url(/img/b1.jpg);
+}
+
+.carousel .carousel__item.carousel__item--2 {
+    background-image: url(/img/b2.jpg);
+}
+
+.carousel .carousel__item.carousel__item--3 {
+    background-image: url(/img/b3.jpg);
+}
+
+.carousel .carousel__item.carousel__item--4 {
+    background-image: url(/img/b4.jpg);
+}
+
+.carousel .carousel__item.carousel__item--1,
+.carousel .carousel__item.carousel__item--2,
+.carousel .carousel__item.carousel__item--3,
+.carousel .carousel__item.carousel__item--4 {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.carousel .carousel__content h1 {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    max-width: 800px;
+    color: #fff;
+}
+
+.carousel .carousel__content p {
+    color: #fff;
+    margin-top: 24px;
+    margin-right: auto;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.8;
+    opacity: 0.9;
+}
+
+.carousel .carousel__content .cta-btn {
+    margin-top: 30px;
+}
+
+.carousel .carousel__content .btn {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 15px 50px;
+    transition: 0.3s ease-in;
+}
+
+.carousel .carousel__slider .slick-arrow {
+    position: absolute;
+    right: 25px;
+    bottom: 50px;
+    font-size: 0;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel .carousel__slider .slick-prev {
+    right: 95px;
+}
+
+.carousel .carousel__slider .slick-prev::before {
+    content: "\f060";
+}
+
+.carousel .carousel__slider .slick-next::before {
+    content: "\f061";
+}
+
+.carousel .carousel__slider .slick-arrow:hover {
+    color: #3F3A64;
+}
+
+.carousel .carousel__slider .slick-arrow::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+    color: #3F3A64;
+}
+
+.carousel .shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel .shape path {
+    fill: #fff;
+}
+
+/* BACK TO TOP BUTTON */
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: #00a63f;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+.backToTop:hover {
+    color: #fff;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }

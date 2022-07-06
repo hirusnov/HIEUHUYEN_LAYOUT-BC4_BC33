@@ -78,7 +78,7 @@
                                 labore et
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
                             <div class="cta-btn" data-animation="animate__fadeInUp" data-delay="1s">
-                                <a href="#url" class="btn btn-primary">Learn More</a>
+                                <a href="#url" class="btn btn-style btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                                 labore et
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
                             <div class="cta-btn" data-animation="animate__fadeInDown" data-delay="1s">
-                                <a href="#url" class="btn btn-primary">Get Started</a>
+                                <a href="#url" class="btn btn-style btn-primary">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                                 et
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
                             <div class="cta-btn" data-animation="animate__fadeInDown" data-delay="1s">
-                                <a href="#url" class="btn btn-primary">Learn More</a>
+                                <a href="#url" class="btn btn-style btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                                 labore et
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
                             <div class="cta-btn" data-animation="animate__fadeInUp" data-delay="1s">
-                                <a href="#url" class="btn btn-primary">Contact Now</a>
+                                <a href="#url" class="btn btn-style btn-style btn-primary">Contact Now</a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
             </svg>
         </div>
     </section>
-    <section class="about py-5">
+    <section class="about py-5" id="about">
         <div class="container py-lg-5 py-md-3">
             <div class="row align-items-center">
                 <div class="about__left col-lg-6">
@@ -182,6 +182,51 @@
             </div>
         </div>
     </section>
+    <section class="works py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="title">
+                        <span>EVERY DAY BRINGS NEW CHALLENGES</span>
+                        <h3 class="mb-4">Creative agency focused on vision, product and people</h3>
+                    </div>
+                    <div class="detail">
+                        <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+                    </div>
+                    <a href="#about" class="btn btn-style btn-primary mt-lg-5 mt-4">
+                        Discover More</a>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 justify-content-center">
+                    <div class="works__grid d-grid">
+                        <div class="works__item">
+                            <div class="icon">
+                                <img src="./img/icon1.png" alt="" class="img-fluid">
+                            </div>
+                            <h4><a href="#url">Our Process</a></h4>
+                        </div>
+                        <div class="works__item">
+                            <div class="icon">
+                                <img src="./img/icon2.png" alt="" class="img-fluid">
+                            </div>
+                            <h4><a href="#url">How We Help</a></h4>
+                        </div>
+                        <div class="works__item">
+                            <div class="icon">
+                                <img src="./img/icon3.png" alt="" class="img-fluid">
+                            </div>
+                            <h4><a href="#url">UI/UX Design</a></h4>
+                        </div>
+                        <div class="works__item">
+                            <div class="icon">
+                                <img src="./img/icon4.png" alt="" class="img-fluid">
+                            </div>
+                            <h4><a href="#url">Creative Ideas</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <a href="#" class="backToTop cd-top text-replace js-cd-top">
         <i class="fa-solid fa-angle-up"></i>
     </a>
@@ -193,16 +238,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slickAndAnimate.js"></script>
     <!-- SCROLL NAVBAR -->
-    <script>
-        $(window).on("scroll", function () {
-            var scroll = $(window).scrollTop();
-            if (scroll >= 80) {
-                $(".header").addClass("nav-fixed");
-            } else {
-                $(".header").removeClass("nav-fixed");
-            }
-        });
-    </script>
+    <script src="./js/scrollNavbar.js"></script>
     <!-- BACK TO TOP -->
     <script src="./js/backtotop/main.js"></script>
     <script src="./js/backtotop/util.js"></script>

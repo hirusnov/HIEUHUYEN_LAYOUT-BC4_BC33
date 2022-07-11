@@ -214,10 +214,13 @@ button:hover {
     opacity: 0.7;
 }
 
-.header.nav-fixed .navbar .nav-link.active {
+.header.nav-fixed .navbar .nav-link.active,
+.header.nav-fixed .navbar .dropdown-item.active,
+.header .navbar .dropdown-item.active {
     color: #009f4d;
     opacity: 0.9;
 }
+
 
 .header .navbar .nav-link.active,
 .header .navbar .nav-link:hover,
@@ -944,7 +947,7 @@ button:hover {
 
 /* END SUBSCRIBE */
 
-/* START SERVICES PAGE - ABOUT */
+/* START SERVICES PAGE, BLOG POST - ABOUT */
 .about .about__thumbnail {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -966,7 +969,7 @@ button:hover {
     z-index: -1;
 }
 
-/* END SERVICES PAGE - ABOUT */
+/* END SERVICES PAGE, BLOG POSTS - ABOUT */
 
 /* START SERVICES PAGE - INTRODUCE */
 .introduce {
@@ -1155,6 +1158,48 @@ button:hover {
 }
 
 /* END SERVICES PAGE - MORE SERVICES*/
+
+/* START BLOG POST PAGE - BLOG*/
+.blog .blog__pagination {
+    margin-top: 32px;
+}
+
+.blog .blog__pagination .current {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 600;
+    background-color: #009f4d;
+    color: #fff;
+    border: 2px solid #009f4d;
+}
+
+.blog .blog__pagination a {
+    display: inline-block;
+    color: #666;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 600;
+    border: 2px solid #eee;
+    transition: .3s ease;
+}
+
+.blog .blog__pagination a:hover {
+    background-color: #009f4d;
+    color: #fff;
+    border: 2px solid #009f4d;
+}
+
+.blog .blog__pagination a:last-child,
+.blog .blog__pagination a:first-child {
+    width: auto;
+    padding: 0 15px;
+}
+/* END BLOG POST PAGE - BLOG*/
 
 /* START FOOTER */
 .footer {

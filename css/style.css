@@ -122,7 +122,7 @@ button:hover {
 }
 
 .detail {
-    color: #4b5584;
+    color: #666;
     font-size: 17px;
     line-height: 27px;
     opacity: .8;
@@ -175,7 +175,8 @@ button:hover {
     color: #fff;
 }
 
-.header.nav-fixed .navbar-brand {
+.header.nav-fixed .navbar-brand,
+.header.nav-fixed .navbar-brand p {
     color: #3f3a64;
 }
 
@@ -190,6 +191,7 @@ button:hover {
     font-weight: 600;
     font-size: 14px;
     opacity: .9;
+    color: #fff;
 }
 
 .header .navbar .navbar-nav {
@@ -1175,6 +1177,7 @@ button:hover {
     font-weight: 600;
     font-size: 14px;
     opacity: .9;
+    color: #fff;
 }
 
 .footer .footer__desc {

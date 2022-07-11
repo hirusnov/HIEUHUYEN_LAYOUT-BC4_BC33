@@ -792,49 +792,49 @@ button:hover {
 
 /* END TESTIMONIAL */
 
-/* START NEWS */
-.news .col-lg-4 {
+/* START BLOG */
+.blog .col-lg-4 {
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.news .card,
-.news .card-header,
-.news .card-body,
-.news .card-footer {
+.blog .card,
+.blog .card-header,
+.blog .card-body,
+.blog .card-footer {
     border: none;
 }
 
-.news .card {
+.blog .card {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
 }
 
-.news .card-footer {
+.blog .card-footer {
     background: #fff;
     border-top: 1px solid #eee;
 }
 
-.news .news__thumbnail {
+.blog .blog__thumbnail {
     overflow: hidden;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
-.news .news__thumbnail img {
+.blog .blog__thumbnail img {
     transition: 0.3s ease-in-out;
 }
 
-.news .card:hover .news__thumbnail img {
+.blog .card:hover .blog__thumbnail img {
     transform: scale(1.1);
 }
 
-.news .news__details p a {
+.blog .blog__details p a {
     font-weight: 400;
     font-size: 17px;
     color: #999;
 }
 
-.news .news__details .news__desc {
+.blog .blog__details .blog__desc {
     display: block;
     font-size: 20px;
     line-height: 28px;
@@ -844,23 +844,23 @@ button:hover {
     transition: .3s ease;
 }
 
-.news .news__details .news__desc:hover {
+.blog .blog__details .blog__desc:hover {
     color: #009f4d;
 }
 
-.news .news__author {
+.blog .blog__author {
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
 }
 
-.news .news__author span {
+.blog .blog__author span {
     color: #666;
     font-size: 15px;
     font-weight: 600;
     opacity: .6;
 }
 
-.news .news__author a {
+.blog .blog__author a {
     font-size: 16px;
     color: #3f3a64;
     font-weight: 600;
@@ -869,18 +869,18 @@ button:hover {
     transition: .3s ease;
 }
 
-.news .news__author a:hover {
+.blog .blog__author a:hover {
     color: #009f4d;
 }
 
-.news .news__author p {
+.blog .blog__author p {
     font-size: 15px;
     line-height: 27px;
     color: #666;
     opacity: .8;
 }
 
-/* END NEWS */
+/* END BLOG */
 
 /* START SUBSCRIBE */
 .subscribe {
@@ -1057,6 +1057,10 @@ button:hover {
     grid-template-columns: auto 1fr;
     gap: 30px;
     align-items: center;
+}
+
+.services-contact .services-contact__info.services-contact__info--3 {
+    border-bottom: 1px solid transparent;
 }
 
 .services-contact .services-contact__info i {

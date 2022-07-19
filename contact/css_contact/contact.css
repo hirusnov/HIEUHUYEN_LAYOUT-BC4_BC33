@@ -229,7 +229,7 @@
         .carousel .carousel__thumbnail {
             padding-top: 30px;
             padding-bottom: 30px;
-            background: url(/img/b1.jpg);
+            background: url(../../img/b1.jpg);
             background-size: cover;
             background-repeat: no-repeat, no-repeat, no-repeat;
             position: relative;
@@ -369,6 +369,21 @@
             display: inline-block;
             line-height: 50px;
             box-shadow: none;
+        }
+        
+        .contact_form .form input:focus {
+            background-color: #f8f9fa;
+            border: 1px solid #97a1a9;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        
+        .contact_form .form textarea:focus {
+            background-color: #f8f9fa;
+            border: 1px solid #97a1a9;
+            border-radius: 10px;
+            padding: 3px;
+            text-decoration: none;
         }
         
         .contact_form .button {
@@ -545,7 +560,6 @@
             opacity: 1;
         }
         /* END BACK TO TOP BUTTON */
-        
         /* Màn hình ipad  */
         
         @media screen and (max-width: 992px) {
@@ -587,5 +601,3 @@
                 width: 100%;
             }
         }
-        
-      

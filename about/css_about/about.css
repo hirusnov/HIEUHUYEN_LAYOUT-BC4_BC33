@@ -847,3 +847,11 @@ a:hover {
         margin-top: 4px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .about-company .about-company__img::before {
+        content: "";
+        width: 350px;
+        height: 350px;
+    }
+}

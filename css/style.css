@@ -914,8 +914,7 @@ button:hover {
     position: relative;
     display: grid;
     grid-template-columns: 50px 1fr auto;
-    max-width: 550px;
-    margin: auto;
+    max-width: 100%;
 }
 
 .subscribe .input-group-text {
@@ -942,7 +941,7 @@ button:hover {
 .subscribe .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 0 25px;
+    padding: 0 10px;
     font-size: 16px;
 }
 

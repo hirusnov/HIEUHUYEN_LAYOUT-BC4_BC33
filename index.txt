@@ -4,4 +4,6 @@ I. Thành Viên:
 2. Nguyễn Thị Khánh Huyền
 
 II. Các phần đã làm :
+1. Hiếu : Home , Services , Blog Post
+2. Huyền : About , Error page , Contact 
 

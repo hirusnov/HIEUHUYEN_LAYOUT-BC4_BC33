@@ -1,4 +1,5 @@
 /* INIT */
+
 *,
 *::before,
 *::after {
@@ -143,7 +144,6 @@ a:hover {
     border-radius: 10px;
 }
 
-
 .play-icon {
     display: inline-block;
     width: 70px;
@@ -157,7 +157,9 @@ a:hover {
     border: 3px solid #009f4d;
 }
 
+
 /* START HEADER */
+
 .header {
     padding: 0px;
     height: 100px;
@@ -242,7 +244,6 @@ a:hover {
     opacity: 0.9;
 }
 
-
 .header .navbar .nav-link.active,
 .header .navbar .nav-link:hover,
 .header .navbar .nav-link:focus {
@@ -300,9 +301,12 @@ a:hover {
     cursor: pointer;
 }
 
+
 /* END HEADER */
 
+
 /* START ABOUT PAGE - ABOUT */
+
 .about .about__thumbnail {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -324,9 +328,12 @@ a:hover {
     z-index: -1;
 }
 
+
 /* END ABOUT PAGE - ABOUT */
 
+
 /* START ABOUT PAGE - ABOUT-COMPANY */
+
 .about-company .about-company__img img {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 0 15px 38px 0 rgb(0 0 0 / 20%);
@@ -410,9 +417,12 @@ a:hover {
     color: #009f4d;
 }
 
+
 /* END ABOUT PAGE - ABOUT-COMPANY */
 
+
 /* START ABOUT PAGE - STATISTIC */
+
 .statistic {
     background: #f8f9fa;
 }
@@ -441,9 +451,12 @@ a:hover {
     border-radius: 8px;
 }
 
+
 /* END ABOUT PAGE - STATISTIC */
 
+
 /* START ABOUT PAGE - HISTORY */
+
 .history {
     background: url(/img/bg1.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -484,9 +497,12 @@ a:hover {
     transition: 0.3s ease-in-out;
 }
 
+
 /* END ABOUT PAGE - HISTORY */
 
+
 /* START ABOUT PAGE - TEAM */
+
 .team .team__img img {
     background: #f7f7f7;
 }
@@ -565,9 +581,12 @@ a:hover {
     color: #009f4d;
 }
 
+
 /* END ABOUT PAGE - TEAM */
 
+
 /* START ABOUT PAGE - FEATURES */
+
 .features {
     background: #f7f7f7;
 }
@@ -621,16 +640,23 @@ a:hover {
     color: #f48924;
 }
 
+
 /* END ABOUT PAGE - FEATURES */
 
+
 /* START ABOUT PAGE - CONTACT */
+
 .contact .contact__info {
     max-width: 700px;
     margin: 0 auto;
 }
+
+
 /* END ABOUT PAGE - CONTACT */
 
+
 /* START FOOTER */
+
 .footer {
     background: #151421;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
@@ -755,9 +781,12 @@ a:hover {
     transition: .3s ease;
 }
 
+
 /* END FOOTER */
 
+
 /* START BACK TO TOP BUTTON */
+
 .backToTop {
     width: 50px;
     height: 50px;
@@ -786,4 +815,35 @@ a:hover {
     opacity: 1;
 }
 
+
 /* END BACK TO TOP BUTTON */
+
+@media screen and (max-width:768px) {
+    .about-company .about-company__img::before {
+        content: "";
+        width: 400px;
+        height: 400px;
+    }
+    .about-company .about-company__img-box {
+        color: #fff;
+        right: 25px;
+        padding: 20px;
+        min-width: 50px;
+        border-radius: 8px;
+        min-height: 50px;
+    }
+    .statistic .statistic__info {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .features .features__icon {
+        font-size: 200%;
+    }
+    .features .features__icon i {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 8px;
+        margin-top: 4px;
+    }
+}

@@ -545,9 +545,7 @@
             opacity: 1;
         }
         /* END BACK TO TOP BUTTON */
-        /* Màn hình laptop , windows  */
         
-        @media screen and (max-width: 1200px) {}
         /* Màn hình ipad  */
         
         @media screen and (max-width: 992px) {
@@ -590,4 +588,4 @@
             }
         }
         
-        @media (max-width: 576px) {}
+      

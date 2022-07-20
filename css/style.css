@@ -291,6 +291,7 @@ button:hover {
     border-radius: 8px;
     background-color: #fff;
     min-width: 186px;
+    position: absolute;
 }
 
 .header .navbar .dropdown-menu i {

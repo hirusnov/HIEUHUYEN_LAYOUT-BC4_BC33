@@ -142,6 +142,20 @@ a:hover {
     padding: 5px 7px;
 }
 
+.header .nav-toggle-fixed {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 88px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #fff;
+}
+
+.header.nav-fixed .nav-toggle-fixed {
+    top: 78px;
+}
+
 .header .navbar .container-fluid {
     padding: 0;
 }
@@ -180,7 +194,8 @@ a:hover {
     font-weight: 600;
 }
 
-.header .navbar .nav-link {
+.header .navbar .nav-link,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link {
     padding: 12px;
     color: #fff;
     opacity: 0.8;
@@ -201,10 +216,12 @@ a:hover {
     opacity: 0.9;
 }
 
-
 .header .navbar .nav-link.active,
 .header .navbar .nav-link:hover,
-.header .navbar .nav-link:focus {
+.header .navbar .nav-link:focus,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link.active,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link:hover,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link:focus {
     color: #fff;
     opacity: 1;
 }
@@ -333,8 +350,6 @@ a:hover {
     display: block;
     left: 0px;
     top: 0px;
-    width: 200px;
-    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     background: #f7f7f7;

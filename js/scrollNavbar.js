@@ -6,3 +6,11 @@ $(window).on("scroll", function () {
         $(".header").removeClass("nav-fixed");
     }
 });
+$(document).ready(function () {
+    window.outerWidth <= 991 ? $(".navbar-collapse").addClass("nav-toggle-fixed")
+    : $(".navbar-collapse").removeClass("nav-toggle-fixed");
+    $(window).resize(function () {
+        window.outerWidth <= 991 ? $(".navbar-collapse").addClass("nav-toggle-fixed")
+        : $(".navbar-collapse").removeClass("nav-toggle-fixed");
+    });
+})

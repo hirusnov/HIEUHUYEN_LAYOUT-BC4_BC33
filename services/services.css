@@ -137,6 +137,34 @@ button:hover {
     margin: auto;
 }
 
+@media (max-width: 1080px) {
+    .title h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .title h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 415px) {
+    .title h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
 /* START HEADER */
 .header {
     padding: 0px;
@@ -161,6 +189,20 @@ button:hover {
     background-color: #009f4d;
     color: #fff;
     padding: 5px 7px;
+}
+
+.header .nav-toggle-fixed {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 88px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #fff;
+}
+
+.header.nav-fixed .nav-toggle-fixed {
+    top: 78px;
 }
 
 .header .navbar .container-fluid {
@@ -201,7 +243,8 @@ button:hover {
     font-weight: 600;
 }
 
-.header .navbar .nav-link {
+.header .navbar .nav-link,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link {
     padding: 12px;
     color: #fff;
     opacity: 0.8;
@@ -222,10 +265,12 @@ button:hover {
     opacity: 0.9;
 }
 
-
 .header .navbar .nav-link.active,
 .header .navbar .nav-link:hover,
-.header .navbar .nav-link:focus {
+.header .navbar .nav-link:focus,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link.active,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link:hover,
+.header.nav-fixed .navbar .nav-toggle-fixed .nav-link:focus {
     color: #fff;
     opacity: 1;
 }
@@ -279,6 +324,7 @@ button:hover {
     border-radius: 50%;
     cursor: pointer;
 }
+
 /* END HEADER */
 
 /* START SERVICES PAGE - ABOUT */
@@ -330,6 +376,26 @@ button:hover {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .introduce .introduce__left h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .introduce .introduce__left {
+        padding: 35px 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .introduce .introduce__left h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
 /* END SERVICES PAGE - INTRODUCE */
 
 /* START SERVICES PAGE - SERVICES PART*/
@@ -363,6 +429,39 @@ button:hover {
 
 .services-part .services-part__info a:hover {
     color: #009f4d;
+}
+
+@media (max-width: 1080px) {
+    .services-part .services-part__item {
+        padding: 50px 30px;
+        grid-gap: 10px;
+    }
+
+    .services-part .services-part__item i {
+        font-size: 34px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 736px) {
+    .services-part .services-part__item {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 415px) {
+    .services-part .services-part__item {
+        padding: 30px 25px;
+    }
+
+    .services-part .services-part__info a {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .services-part .services-part__item i {
+        font-size: 32px;
+    }
 }
 
 /* END SERVICES PAGE - SERVICES PART*/
@@ -449,6 +548,39 @@ button:hover {
     min-height: 100px;
 }
 
+.services-contact .services-contact__right button {
+    margin: auto;
+}
+
+@media all and (max-width: 1080px) {
+    .services-contact .services-contact__form {
+        padding: 50px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .services-contact .services-contact__info i {
+        font-size: 30px;
+    }
+
+    .services-contact .services-contact__info {
+        padding: 25px 0px;
+    }
+}
+
+@media all and (max-width: 415px) {
+    .services-contact .services-contact__form {
+        padding: 40px 30px;
+    }
+}
+
+@media all and (max-width: 384px) {
+    .services-contact .services-contact__info {
+        padding: 20px 0px;
+        grid-gap: 20px;
+    }
+}
+
 /* END SERVICES PAGE - CONTACT*/
 
 /* START SERVICES PAGE - MORE SERVICES*/
@@ -489,6 +621,26 @@ button:hover {
 
 .more-services .more-services__item a:hover {
     color: #009f4d;
+}
+
+@media (max-width: 768px) {
+    .more-services .more-services__item a {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .more-services .more-services__item {
+        padding: 35px 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .more-services .more-services__item a {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 
 /* END SERVICES PAGE - MORE SERVICES*/
@@ -648,4 +800,5 @@ button:hover {
     visibility: visible;
     opacity: 1;
 }
+
 /* END BACK TO TOP BUTTON */

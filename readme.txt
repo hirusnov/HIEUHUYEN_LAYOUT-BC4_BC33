@@ -1,0 +1,8 @@
+I. Thành Viên:
+    1. Bùi Trung Hiếu
+    2. Nguyễn Thị Khánh Huyền
+
+II. Các phần đã làm :
+    1. Hiếu : Home, Services, Blog Post, Update Responsive cho tất cả page
+    2. Huyền : About, Error page, Contact, Responsive
+
